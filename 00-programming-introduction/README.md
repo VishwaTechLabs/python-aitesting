@@ -1,207 +1,207 @@
-# 💻 00 — Introduction to Programming
+# 🧠 Programming Introduction
 
-![Programming](https://img.shields.io/badge/Topic-Programming%20Fundamentals-6f42c1?style=for-the-badge)
-![Beginner](https://img.shields.io/badge/Level-Beginner-2ea44f?style=for-the-badge)
-![Testing](https://img.shields.io/badge/Goal-Software%20Testing%20%26%20Automation-ff8c00?style=for-the-badge)
-![AI](https://img.shields.io/badge/Path-AI%20Quality%20Engineering-8a2be2?style=for-the-badge)
+![Programming](https://img.shields.io/badge/Programming-Fundamentals-blue?style=for-the-badge)
+![Level](https://img.shields.io/badge/Level-Beginner-green?style=for-the-badge)
+![Testing](https://img.shields.io/badge/Focus-Software%20Testing-orange?style=for-the-badge)
+![AI](https://img.shields.io/badge/Path-AI%20Quality%20Engineering-purple?style=for-the-badge)
 
-> 🌟 **Before learning Python, understand what programming actually is.**
->
-> Programming is not about memorizing syntax. It is about **understanding a problem, designing a solution, expressing that solution as instructions, executing it, and validating the result.**
+> **One topic → one folder → one README → complete learning chapter**
 
 ---
 
-## 🧭 Where This Fits in Your Journey
+## 🗺️ Where This Topic Fits
 
 ```text
-🧠 Problem
-   ↓
-💡 Logic / Algorithm
-   ↓
-📝 Program
-   ↓
-⚙️ Programming Language
-   ↓
-🖥️ Computer Execution
-   ↓
-✅ Output
-   ↓
-🧪 Testing
-   ↓
-🤖 Automation
-   ↓
-🧠 AI Quality Engineering
+Programming
+    │
+    ├── Python Fundamentals
+    │
+    ├── Software Testing
+    │
+    ├── Automation
+    │      ├── pytest
+    │      ├── API Testing
+    │      └── Playwright
+    │
+    └── AI Quality Engineering
+           ├── AI Application Testing
+           ├── LLM Testing
+           ├── AI Evaluation
+           └── CI/CD Quality Gates
 ```
 
-This module gives you the foundation for everything that follows.
+This chapter gives you the **programming foundation** needed before learning Python and automation.
+
+---
+
+# 🎯 Learning Objectives
+
+By the end of this chapter, you should be able to explain:
+
+- What a **program** is
+- What **programming** means
+- What a **programming language** is
+- How a computer executes instructions
+- What source code and syntax mean
+- What variables and data are
+- What logic and algorithms are
+- What conditions and loops do
+- What functions are
+- What bugs and debugging mean
+- How programming connects to software testing
+- How programming enables test automation
+- Why programming knowledge matters for AI testing
 
 ---
 
 # 1️⃣ What Is a Program?
 
-A **program** is a set of instructions written for a computer to perform a specific task.
+A **program** is a set of instructions written for a computer to perform a task.
 
-In simple words:
+### Simple example
 
-> 📌 **Program = Instructions + Data + Logic + Execution**
-
-For example, imagine a login system.
+Imagine you want a computer to calculate the total price of two products.
 
 ```text
-User enters username
-        ↓
-User enters password
-        ↓
-Application validates credentials
-        ↓
-If valid → Login successful
-If invalid → Login failed
+Product 1 = ₹100
+Product 2 = ₹200
+
+Total = ₹100 + ₹200
+
+Output = ₹300
 ```
 
-Those instructions can be represented by a program.
+The instructions that tell the computer how to perform this calculation form a **program**.
 
-### 🧑‍💻 Simple example
+### Real-world examples
 
-```python
-username = "tester"
-password = "secret"
-
-if username == "tester" and password == "secret":
-    print("Login successful")
-else:
-    print("Login failed")
-```
-
-The computer does not understand our intention.
-
-It follows the instructions we provide.
+| Application | Example of a Program |
+|---|---|
+| Calculator | Performs mathematical calculations |
+| Browser | Opens and interacts with websites |
+| Banking app | Performs banking operations |
+| WhatsApp | Sends messages |
+| Amazon | Handles shopping workflows |
+| Netflix | Streams video |
+| Test automation | Executes automated test cases |
+| AI application | Processes prompts and generates responses |
 
 ---
 
 # 2️⃣ What Is Programming?
 
-**Programming** is the process of designing and writing instructions that a computer can execute to solve a problem or perform a task.
+**Programming is the process of creating instructions that tell a computer what to do.**
 
-Programming involves:
+Think of it like giving instructions to a person.
 
-| Step | Activity |
-|---|---|
-| 🧩 1 | Understand the problem |
-| 🔍 2 | Analyze requirements |
-| 💡 3 | Design the solution |
-| 🧮 4 | Create an algorithm |
-| 📝 5 | Write code |
-| ▶️ 6 | Execute the program |
-| 🧪 7 | Test the result |
-| 🐞 8 | Debug problems |
-| 🔧 9 | Improve the solution |
-| 🚀 10 | Maintain and deploy |
+```text
+Human instruction:
 
-So programming is much more than typing code.
+1. Open the browser
+2. Open the shopping website
+3. Search for a laptop
+4. Select a laptop
+5. Add it to cart
+6. Verify the cart
+```
+
+A programmer converts these instructions into a form that a computer can execute.
+
+```text
+Human Problem
+      ↓
+Logic
+      ↓
+Algorithm
+      ↓
+Program
+      ↓
+Computer
+      ↓
+Result
+```
 
 ---
 
 # 3️⃣ Program vs Programming vs Programming Language
 
-These three terms are often confused.
+| Term | Meaning | Example |
+|---|---|---|
+| Program | Instructions that perform a task | Login program |
+| Programming | Process of creating programs | Writing login logic |
+| Programming Language | Language used to write programs | Python, Java, JavaScript |
+| Source Code | Human-readable program instructions | `print("Hello")` |
+| Execution | Running the program | `python app.py` |
 
-### 📦 Program
+### Easy way to remember
 
-A **program** is the actual set of instructions.
-
-```python
-print("Hello")
-```
-
-### 🛠️ Programming
-
-**Programming** is the activity/process of creating that program.
-
-```text
-Problem
-  ↓
-Think
-  ↓
-Design
-  ↓
-Code
-  ↓
-Test
-  ↓
-Fix
-```
-
-### 🗣️ Programming Language
-
-A **programming language** is the language used to express instructions to a computer.
-
-Examples:
-
-```text
-🐍 Python
-☕ Java
-🟨 JavaScript
-🔷 C#
-⚙️ C/C++
-🦀 Rust
-🐹 Go
-```
-
-### Easy analogy
-
-```text
-English
-   ↓
-Language
-
-Writing a letter
-   ↓
-Activity
-
-The actual letter
-   ↓
-Output
-```
-
-Similarly:
-
-```text
-Python
-   ↓
-Programming Language
-
-Writing Python code
-   ↓
-Programming
-
-Python application
-   ↓
-Program
-```
+> **Programming language = language**  
+> **Programming = process**  
+> **Program = finished set of instructions**
 
 ---
 
 # 4️⃣ Why Do We Need Programming?
 
-Computers are extremely fast at executing instructions, but they need instructions from humans.
+Programming allows us to automate tasks and solve problems.
 
-Programming allows us to build:
+Without programming:
 
-- 🌐 Websites
-- 📱 Mobile applications
-- 🖥️ Desktop applications
-- ☁️ Cloud systems
-- 🗄️ Databases
-- 🔌 APIs
-- 🤖 Automation
-- 🧪 Testing frameworks
-- 🧠 AI applications
-- 📊 Data systems
-- 🎮 Games
-- 🔐 Security tools
-- ⚙️ DevOps platforms
+```text
+Human
+  ↓
+Manually performs task
+  ↓
+Repeats task
+  ↓
+Consumes time
+```
 
-Almost every modern software system contains programs.
+With programming:
+
+```text
+Human
+  ↓
+Writes instructions once
+  ↓
+Computer executes them
+  ↓
+Task can be repeated
+```
+
+This is especially important in **software testing**.
+
+### Manual testing
+
+```text
+Tester
+  ↓
+Open browser
+  ↓
+Login
+  ↓
+Search product
+  ↓
+Add product
+  ↓
+Verify result
+```
+
+### Automation
+
+```text
+Test Code
+   ↓
+Browser Automation
+   ↓
+Login
+   ↓
+Search
+   ↓
+Add Product
+   ↓
+Verify
+```
 
 ---
 
@@ -210,41 +210,34 @@ Almost every modern software system contains programs.
 At a high level:
 
 ```text
-👨‍💻 Human
-   │
-   │ writes code
-   ▼
-📝 Source Code
-   │
-   ▼
-⚙️ Compiler / Interpreter / Runtime
-   │
-   ▼
-🖥️ Machine-level execution
-   │
-   ▼
-📤 Output
+Source Code
+    ↓
+Compiler / Interpreter
+    ↓
+Machine-understandable instructions
+    ↓
+CPU + Memory
+    ↓
+Execution
+    ↓
+Output
 ```
 
-The exact process depends on the programming language.
+Computers ultimately execute machine-level instructions.
 
-For example, Python generally uses an interpreter/runtime environment to execute Python code.
+Humans prefer languages such as:
 
 ```python
-print("Hello World")
+print("Hello")
 ```
 
-When executed, Python processes the instruction and produces:
-
-```text
-Hello World
-```
+Computers operate using much lower-level representations.
 
 ---
 
 # 6️⃣ What Is Source Code?
 
-**Source code** is the human-readable code written by a developer or engineer.
+**Source code** is the human-readable code written by a programmer.
 
 Example:
 
@@ -253,96 +246,71 @@ name = "Vishwa"
 print("Hello", name)
 ```
 
-A source-code file can contain:
+The programmer can read and understand this code.
 
-- Variables
-- Functions
-- Conditions
-- Loops
-- Classes
-- Data structures
-- Imports
-- Error handling
-- Business logic
-
-Python files normally use:
-
-```text
-.py
-```
-
-Example:
-
-```text
-login_test.py
-api_client.py
-calculator.py
-```
+The computer uses a language implementation to execute it.
 
 ---
 
 # 7️⃣ What Is Syntax?
 
-**Syntax** means the rules for writing valid code in a programming language.
+**Syntax is the set of rules that define how code must be written.**
 
-Think of syntax like grammar in a human language.
+Think about English.
 
-### Human language
-
-❌ Incorrect:
+Incorrect:
 
 ```text
 I going school.
 ```
 
-✅ Correct:
+Better:
 
 ```text
 I am going to school.
 ```
 
-### Python
+Programming languages also have rules.
+
+Example Python:
 
 ```python
-if status == 200:
-    print("PASS")
+print("Hello")
 ```
 
-Python expects specific syntax.
+Incorrect syntax may cause an error.
 
-Incorrect indentation or invalid syntax can cause an error.
+```python
+print("Hello"
+```
+
+The closing `)` is missing.
+
+### Key idea
+
+```text
+Syntax = How code must be written
+Logic  = What the code should do
+```
 
 ---
 
 # 8️⃣ What Is Logic?
 
-**Logic** is the reasoning used to decide what a program should do.
+**Logic is the reasoning used to make a program behave correctly.**
 
 Example:
 
 ```text
-IF payment is successful
-    THEN create order
+IF username is correct
+AND password is correct
+THEN login successfully
+
 ELSE
-    show payment failure
+    show login error
 ```
 
-Python:
-
-```python
-if payment_successful:
-    create_order()
-else:
-    show_payment_error()
-```
-
-Logic is extremely important for testers.
-
-Why?
-
-Because testing is largely about asking:
-
-> 🧪 **"Does the software behave correctly for every important condition?"**
+The programming language expresses this logic as executable code.
 
 ---
 
@@ -350,155 +318,127 @@ Because testing is largely about asking:
 
 An **algorithm** is a step-by-step procedure for solving a problem.
 
-Example: Find whether a number is even.
-
-### Algorithm
+### Example: Login algorithm
 
 ```text
-1. Take a number
-2. Divide it by 2
-3. Check the remainder
-4. If remainder = 0 → Even
-5. Otherwise → Odd
+START
+  ↓
+Enter username
+  ↓
+Enter password
+  ↓
+Validate username
+  ↓
+Validate password
+  ↓
+Are both correct?
+  ├── YES → Login successful
+  └── NO  → Show error
+  ↓
+END
 ```
 
-Python:
-
-```python
-number = 10
-
-if number % 2 == 0:
-    print("Even")
-else:
-    print("Odd")
-```
-
-### Algorithm vs Program
+### Programming relationship
 
 ```text
+Problem
+   ↓
 Algorithm
    ↓
-Solution steps
-
-Program
+Logic
    ↓
-Algorithm expressed in a programming language
+Source Code
+   ↓
+Program
 ```
 
 ---
 
 # 🔟 What Is a Flowchart?
 
-A flowchart visually represents program logic.
+A flowchart visually represents a process or algorithm.
 
 Example:
 
 ```text
-        ┌─────────────┐
-        │ Start       │
-        └──────┬──────┘
-               ↓
-        ┌─────────────┐
-        │ Enter age   │
-        └──────┬──────┘
-               ↓
-        ┌─────────────┐
-        │ age >= 18 ? │
-        └──────┬──────┘
-          Yes /   \ No
-             ↓     ↓
-       ┌───────┐ ┌────────┐
-       │Adult  │ │Minor   │
-       └───┬───┘ └───┬────┘
-           └─────┬───┘
-                 ↓
-          ┌────────────┐
-          │    End     │
-          └────────────┘
+       ┌───────────┐
+       │   START   │
+       └─────┬─────┘
+             ↓
+     ┌───────────────┐
+     │ Enter password│
+     └───────┬───────┘
+             ↓
+      ┌─────────────┐
+      │ Password OK?│
+      └──────┬──────┘
+          YES│   │NO
+             ↓   ↓
+       ┌───────┐ ┌────────────┐
+       │ Login │ │ Show Error │
+       └───┬───┘ └─────┬──────┘
+           ↓           ↓
+          END         END
 ```
 
-Flowcharts help beginners understand logic before writing code.
+Flowcharts are useful before writing complex automation or application logic.
 
 ---
 
-# 1️⃣1️⃣ What Is a Variable?
+# 1️⃣1️⃣ What Is Data?
 
-A variable is a name used by a program to refer to a value.
+**Data is information that a program stores, processes, or uses.**
+
+Examples:
+
+```text
+Name       → "Vishwa"
+Age        → 39
+Price      → 999.50
+Login      → True
+Product ID → "P1001"
+```
+
+Later in Python, you will learn different **data types** for representing this data.
+
+---
+
+# 1️⃣2️⃣ What Is a Variable?
+
+A variable is a **name used by a program to refer to a value**.
 
 Example:
 
 ```python
 name = "Vishwa"
 age = 39
+price = 999.50
 ```
 
 Conceptually:
 
 ```text
-name ─────► "Vishwa"
-age  ─────► 39
+name  ─────→ "Vishwa"
+age   ─────→ 39
+price ─────→ 999.50
 ```
 
-Variables allow programs to work with changing data.
+### Important
 
-For testing:
-
-```python
-username = "tester"
-expected_status = 200
-timeout = 5
-```
-
----
-
-# 1️⃣2️⃣ What Is Data?
-
-**Data** is information processed by a program.
-
-Examples:
-
-```text
-Name
-Age
-Email
-Password
-Product
-Price
-Order ID
-HTTP status
-Response body
-AI prompt
-AI response
-```
-
-A program takes data, processes it using logic, and produces a result.
-
-```text
-📥 Input Data
-     ↓
-⚙️ Processing
-     ↓
-📤 Output
-```
+In Python, it is more accurate to think of a variable as a **name/reference associated with an object/value**, rather than a box containing a fixed type.
 
 ---
 
 # 1️⃣3️⃣ Input → Process → Output
 
-This is one of the most important programming concepts.
+One of the most important programming models is:
 
 ```text
-          ┌────────────┐
-          │   INPUT    │
-          └─────┬──────┘
-                ↓
-          ┌────────────┐
-          │  PROCESS   │
-          └─────┬──────┘
-                ↓
-          ┌────────────┐
-          │   OUTPUT   │
-          └────────────┘
+INPUT
+  ↓
+PROCESS
+  ↓
+OUTPUT
 ```
 
 ### Example
@@ -512,26 +452,174 @@ total = price * quantity
 print(total)
 ```
 
+### Explanation
+
 ```text
 Input
-100 × 3
+  price = 100
+  quantity = 3
 
-   ↓
+       ↓
 
 Process
-price * quantity
+  total = price × quantity
 
-   ↓
+       ↓
 
 Output
-300
+  300
 ```
 
 ---
 
-# 1️⃣4️⃣ What Is a Function?
+# 1️⃣4️⃣ First Python Example
+
+Python is one of the most useful languages for software testing and AI-related development.
+
+```python
+print("Hello, World!")
+```
+
+### What happens?
+
+`print()` displays information on the screen.
+
+Output:
+
+```text
+Hello, World!
+```
+
+---
+
+# 1️⃣5️⃣ A Small Real-World Program
+
+Imagine a test result.
+
+```python
+test_name = "Login Test"
+status = "PASS"
+
+print(test_name)
+print(status)
+```
+
+Output:
+
+```text
+Login Test
+PASS
+```
+
+This same basic programming concept eventually becomes:
+
+```text
+Test Case
+   ↓
+Automation Code
+   ↓
+Execution
+   ↓
+Assertion
+   ↓
+PASS / FAIL
+   ↓
+Report
+```
+
+---
+
+# 1️⃣6️⃣ Conditions
+
+Programs often need to make decisions.
+
+Example:
+
+```python
+age = 20
+
+if age >= 18:
+    print("Eligible")
+else:
+    print("Not eligible")
+```
+
+Conceptually:
+
+```text
+Condition
+   ↓
+True? ─── YES → Action A
+   │
+   NO
+   ↓
+Action B
+```
+
+Conditions are heavily used in:
+
+- application logic
+- test automation
+- API validation
+- test data handling
+- AI evaluation rules
+
+---
+
+# 1️⃣7️⃣ Loops
+
+A loop repeats instructions.
+
+Example:
+
+```python
+for i in range(3):
+    print("Running test")
+```
+
+Output:
+
+```text
+Running test
+Running test
+Running test
+```
+
+### Why testers need loops
+
+Suppose you need to test 100 usernames.
+
+Instead of writing:
+
+```text
+Test username 1
+Test username 2
+Test username 3
+...
+Test username 100
+```
+
+you can write automation that processes test data repeatedly.
+
+```text
+Test Data
+   ↓
+Loop
+   ↓
+Execute Test
+   ↓
+Validate
+   ↓
+Next Data
+```
+
+---
+
+# 1️⃣8️⃣ Functions
 
 A function is a reusable block of code designed to perform a task.
+
+Example:
 
 ```python
 def add(a, b):
@@ -548,534 +636,487 @@ Output:
 30
 ```
 
-Functions are important because automation frameworks contain many reusable operations.
+### Why functions matter
 
-Examples:
+Without functions:
 
 ```text
-login()
-logout()
-create_user()
-delete_user()
-send_request()
-validate_response()
-generate_report()
+Repeated code
+Repeated code
+Repeated code
+```
+
+With functions:
+
+```text
+Reusable Function
+       ↓
+Call whenever needed
+```
+
+Automation frameworks depend heavily on reusable functions and abstractions.
+
+---
+
+# 1️⃣9️⃣ Bugs
+
+A **bug** is a defect or unexpected behavior in software.
+
+Example:
+
+```python
+price = 100
+quantity = 2
+
+total = price + quantity
+```
+
+Expected:
+
+```text
+200
+```
+
+Actual:
+
+```text
+102
+```
+
+The logic is wrong.
+
+Correct:
+
+```python
+total = price * quantity
 ```
 
 ---
 
-# 1️⃣5️⃣ What Are Conditions?
+# 2️⃣0️⃣ Debugging
 
-Conditions allow programs to make decisions.
+**Debugging is the process of finding and fixing the cause of a problem in software.**
+
+Typical process:
+
+```text
+Bug
+ ↓
+Reproduce
+ ↓
+Investigate
+ ↓
+Find Root Cause
+ ↓
+Fix
+ ↓
+Retest
+ ↓
+Verify
+```
+
+Testing and debugging are related but not identical.
+
+> **Testing finds evidence of problems. Debugging investigates and fixes the cause.**
+
+---
+
+# 2️⃣1️⃣ Programming and Software Testing
+
+Programming becomes extremely valuable when moving from manual testing to automation.
+
+### Manual testing
+
+```text
+Tester
+ ↓
+Execute test manually
+ ↓
+Observe result
+ ↓
+Record PASS/FAIL
+```
+
+### Automation testing
+
+```text
+Test Code
+ ↓
+Automation Framework
+ ↓
+Application
+ ↓
+Validation / Assertion
+ ↓
+PASS / FAIL
+ ↓
+Report
+```
+
+Programming allows the tester to create the instructions that perform these actions.
+
+---
+
+# 2️⃣2️⃣ Programming + Testing Terminology
+
+| Programming Concept | Testing Usage |
+|---|---|
+| Variable | Store test data |
+| Data type | Represent test values |
+| Condition | Conditional test logic |
+| Loop | Repeat test execution |
+| Function | Reusable test action |
+| Exception | Handle unexpected errors |
+| File | Read/write test data |
+| JSON | API request/response data |
+| Class | Framework abstraction |
+| Object | Test/page/API object |
+| Assertion | Validate expected vs actual |
+| Logging | Record execution information |
+
+---
+
+# 2️⃣3️⃣ Programming → Automation
+
+The journey looks like this:
+
+```text
+Programming Fundamentals
+          ↓
+Python
+          ↓
+Testing Fundamentals
+          ↓
+pytest
+          ↓
+API Testing
+          ↓
+Playwright
+          ↓
+Automation Framework
+          ↓
+CI/CD
+```
+
+---
+
+# 2️⃣4️⃣ Programming → AI Testing
+
+Modern applications increasingly contain AI components.
+
+The testing journey can therefore become:
+
+```text
+Python
+   ↓
+Software Testing
+   ↓
+Automation
+   ↓
+AI Application Testing
+   ↓
+LLM Testing
+   ↓
+AI Evaluation
+   ↓
+AI Quality Engineering
+   ↓
+CI/CD Quality Gates
+```
+
+---
+
+# 2️⃣5️⃣ What Is AI Application Testing?
+
+Traditional application:
+
+```text
+Input → Code → Output
+```
+
+AI application:
+
+```text
+Input
+  ↓
+Prompt / Request
+  ↓
+AI Model
+  ↓
+Generated Response
+  ↓
+Evaluation
+```
+
+Testing AI applications can involve checking:
+
+- correctness
+- relevance
+- groundedness
+- safety
+- consistency
+- latency
+- cost
+- hallucination
+- prompt behavior
+- tool/function calling
+- retrieval quality
+
+Programming becomes the foundation for automating these checks.
+
+---
+
+# 2️⃣6️⃣ Example: Automated AI Quality Check
+
+A simplified example:
 
 ```python
-status_code = 200
+response = "The capital of France is Paris."
 
-if status_code == 200:
+expected = "Paris"
+
+if expected in response:
     print("PASS")
 else:
     print("FAIL")
 ```
 
-Testing is full of conditions:
-
-```text
-IF status == 200 → PASS
-IF status == 500 → FAIL
-
-IF login succeeds → dashboard visible
-IF login fails → error message visible
-```
+This is only a basic example. Real AI evaluation requires much stronger evaluation strategies.
 
 ---
 
-# 1️⃣6️⃣ What Are Loops?
+# 2️⃣7️⃣ Programming Languages
 
-A loop repeats instructions.
+There are many programming languages.
 
-```python
-for test_case in ["TC001", "TC002", "TC003"]:
-    print(test_case)
-```
-
-Output:
-
-```text
-TC001
-TC002
-TC003
-```
-
-Automation uses loops constantly.
-
-For example:
-
-```text
-Read 100 test cases
-      ↓
-Execute each test
-      ↓
-Capture result
-      ↓
-Generate report
-```
-
----
-
-# 1️⃣7️⃣ What Is Debugging?
-
-**Debugging** is the process of finding and fixing problems in software.
-
-Example:
-
-```python
-expected = 10
-actual = 8
-
-print(expected)
-print(actual)
-```
-
-A tester/developer investigates:
-
-```text
-Expected = 10
-Actual   = 8
-             ↓
-        Why different?
-             ↓
-       Find root cause
-             ↓
-          Fix it
-```
-
-### Common debugging techniques
-
-- 🔍 Read error messages
-- 📝 Add logs
-- 🧪 Reproduce the problem
-- 🔬 Inspect variables
-- 🪜 Use a debugger
-- 🔁 Create a small reproducible example
-- ✅ Add a regression test
-
----
-
-# 1️⃣8️⃣ What Is a Bug?
-
-A **bug/defect** is a problem where software behaves differently from its intended or expected behavior.
-
-Example:
-
-```text
-Requirement:
-Users with valid credentials should log in.
-
-Actual:
-Valid credentials produce "Invalid password".
-```
-
-That difference needs investigation.
-
----
-
-# 1️⃣9️⃣ Programming and Software Testing
-
-Programming and testing are closely connected.
-
-### Developer mindset
-
-```text
-"How do I build this?"
-```
-
-### Tester mindset
-
-```text
-"How do I prove this works?"
-"How can it fail?"
-"What happens with invalid input?"
-"What happens at the boundaries?"
-```
-
-### Automation engineer mindset
-
-```text
-"How can I test this repeatedly with code?"
-```
-
-### AI Quality Engineer mindset
-
-```text
-"How can I measure whether this AI system is
-correct, safe, reliable, grounded and production-ready?"
-```
-
----
-
-# 2️⃣0️⃣ Manual Testing → Automation → AI Quality
-
-Your learning journey:
-
-```text
-🧑‍💻 Programming Fundamentals
-            ↓
-🧪 Manual Testing Fundamentals
-            ↓
-🐍 Python
-            ↓
-🧪 pytest
-            ↓
-🔌 API Automation
-            ↓
-🎭 Playwright
-            ↓
-🏗️ Automation Framework
-            ↓
-🤖 AI Application Testing
-            ↓
-🧠 LLM Evaluation
-            ↓
-📊 AI Quality Engineering
-            ↓
-🚀 CI/CD Quality Gates
-```
-
----
-
-# 2️⃣1️⃣ Why Learn Programming Before Python?
-
-Python is a **programming language**.
-
-Before learning Python syntax, students should understand:
-
-- What a program is
-- What programming means
-- What an algorithm is
-- What logic means
-- What variables represent
-- What data is
-- What input/output means
-- What functions do
-- What conditions do
-- What loops do
-- What debugging means
-- What testing means
-
-Then Python becomes much easier.
-
-Instead of learning:
-
-```python
-if
-for
-def
-list
-dict
-```
-
-as isolated syntax, students understand:
-
-```text
-Decision
- ↓
-if
-
-Repetition
- ↓
-for
-
-Reusable operation
- ↓
-function
-
-Collection of data
- ↓
-list/dict
-```
-
----
-
-# 2️⃣2️⃣ Programming Languages — Big Picture
-
-Programming languages can be grouped in different ways.
-
-## By abstraction
-
-```text
-Low-level
-   ↓
-Machine-oriented
-   ↓
-Assembly
-   ↓
-High-level
-   ↓
-Python / Java / JavaScript / C#
-```
-
-## By common usage
-
-| Area | Examples |
+| Language | Common Areas |
 |---|---|
-| 🌐 Web | JavaScript, TypeScript |
-| 🐍 Automation | Python |
-| 🏢 Enterprise | Java, C# |
-| ⚙️ Systems | C, C++, Rust |
-| 📱 Mobile | Kotlin, Swift |
-| ☁️ Cloud/Platform | Go, Python, Java |
-| 🤖 AI/Data | Python |
-| 🧪 Testing | Python, Java, JavaScript, C# |
+| Python | Automation, AI, testing, backend, data |
+| Java | Enterprise, backend, automation |
+| JavaScript | Web, frontend, Node.js |
+| TypeScript | Web, automation, enterprise |
+| C | Systems, embedded |
+| C++ | Systems, performance applications |
+| C# | .NET, enterprise, testing |
+| Go | Cloud, infrastructure, backend |
+| Rust | Systems, security, performance |
 
-There is no single "best" programming language.
+### For this learning path
 
-The right language depends on the problem, ecosystem, team and tooling.
-
----
-
-# 2️⃣3️⃣ Compiler vs Interpreter — Beginner View
-
-### Compiler
-
-A compiler generally translates source code into another executable/intermediate form before execution.
-
-Examples commonly associated with compiled languages include:
+We primarily use:
 
 ```text
-C
-C++
-Rust
-Go
-```
-
-### Interpreter / Runtime
-
-An interpreter/runtime executes or evaluates program instructions through a runtime system.
-
-Python is commonly described as an interpreted language at the beginner level, although its implementation involves compilation to bytecode before execution by the Python virtual machine.
-
-### Important
-
-Don't get stuck on terminology.
-
-For beginners, remember:
-
-```text
-Source Code
-    ↓
-Language Runtime / Toolchain
-    ↓
-Execution
-    ↓
-Result
-```
-
----
-
-# 2️⃣4️⃣ What Is Software?
-
-**Software** is a collection of programs, data, configuration and related components that instruct a computing system to perform tasks.
-
-Examples:
-
-```text
-🌐 Browser
-📱 Mobile App
-🏦 Banking Application
-🛒 E-commerce Platform
-☁️ Cloud Platform
-🤖 AI Chatbot
-```
-
-A useful simplified model:
-
-```text
-Software
-├── Application Code
-├── Data
-├── Configuration
-├── Dependencies
-├── Infrastructure
-└── Runtime Environment
-```
-
----
-
-# 2️⃣5️⃣ What Is an Application?
-
-An **application** is software designed to perform tasks for users or other systems.
-
-Example:
-
-```text
-E-commerce Application
-│
-├── Login
-├── Product Search
-├── Cart
-├── Payment
-├── Order
-└── Notifications
-```
-
-Each feature contains programming logic.
-
-Each feature can also have tests.
-
----
-
-# 2️⃣6️⃣ What Is Automation?
-
-**Automation** means using software to perform tasks with reduced manual intervention.
-
-Example:
-
-### Manual
-
-```text
-Open browser
-   ↓
-Login
-   ↓
-Search product
-   ↓
-Add product
-   ↓
-Checkout
-   ↓
-Verify result
-```
-
-### Automated
-
-```text
-Test Script
-    ↓
-Browser Automation
-    ↓
-Login
-    ↓
-Search
-    ↓
-Checkout
-    ↓
-Assertions
-    ↓
-Report
-```
-
-Python + Playwright can automate browser testing.
-
-Python + requests can automate API testing.
-
-Python + pytest can organize and execute tests.
-
----
-
-# 2️⃣7️⃣ What Is AI Programming?
-
-AI applications are also software.
-
-A simplified AI application can look like:
-
-```text
-User Prompt
-    ↓
-Application Logic
-    ↓
-Model / AI Service
-    ↓
-Response
-    ↓
-Post-processing
-    ↓
-User
-```
-
-The quality problem becomes more complex because AI output may not always be deterministic.
-
-Therefore:
-
-```text
-Traditional Testing
-      +
-AI Evaluation
-      +
-Safety
-      +
-Security
-      +
-Performance
-      +
-Observability
-      ↓
+Python
+  ↓
+pytest
+  ↓
+API Testing
+  ↓
+Playwright
+  ↓
+AI Testing
+  ↓
 AI Quality Engineering
 ```
 
 ---
 
-# 2️⃣8️⃣ Programming Concepts You Will Learn Next
+# 2️⃣8️⃣ Compiler vs Interpreter
 
-After this introduction, you will learn Python concepts in this order:
+At a simplified level:
+
+### Compiler
 
 ```text
-01 🐍 Python Introduction
-02 ⚙️ Installation & IDE
-03 📦 Virtual Environments
-04 📝 Syntax
-05 📦 Variables
-06 🔢 Data Types
-07 🔄 Type Casting
-08 🛠️ Operations & Methods
-09 ➕ Operators
-10 🔀 Control Flow
-11 🔧 Functions
-12 📚 Collections
-13 🔤 Strings
-14 🚨 Exceptions
-15 📁 File Handling
-16 🗂️ JSON & CSV
-17 🔁 Iterators & enumerate()
-18 ⚡ Generators
-19 🎯 Decorators & Closures
-20 📦 Modules
-21 🗃️ Packages
-22 📚 Libraries & Frameworks
-23 📥 pip
-24 📦 PyPI / Packaging
-25 🧱 Classes & Objects
-26 🧠 OOP
-27 🚀 Advanced Python
-28 ⚙️ Configuration
-29 🔐 Environment Variables & Secrets
-30 📝 Logging
-31 📏 Coding Standards
-32 🧪 Python for Testing
+Source Code
+    ↓
+Compiler
+    ↓
+Compiled Representation
+    ↓
+Execution
 ```
 
-Not all topics need the same depth.
+Examples include languages commonly associated with compiled workflows such as C/C++.
 
-> ⭐ **Learn the fundamentals deeply. Learn advanced topics when they become useful.**
+### Interpreter / Runtime
+
+```text
+Source Code
+    ↓
+Language Runtime
+    ↓
+Execution
+```
+
+Python uses an implementation/runtime model involving compilation to bytecode and execution by the Python virtual machine.
+
+> The simple “compiler vs interpreter” distinction is useful for beginners, but real language implementations can be more sophisticated.
 
 ---
 
-# 2️⃣9️⃣ Beginner Mini Exercises
+# 2️⃣9️⃣ Software vs Program vs Application
 
-### 🟢 Exercise 1 — Hello
+| Term | Simple Meaning |
+|---|---|
+| Program | Instructions that perform a task |
+| Software | Collection of programs/components that provide functionality |
+| Application | Software designed for users or a particular purpose |
+| Automation Script | Program that automates a task |
+| Test Script | Program that executes and validates a test |
+
+Example:
+
+```text
+Shopping Application
+      ↓
+Login Feature
+      ↓
+Login Test
+      ↓
+Automation Script
+```
+
+---
+
+# 3️⃣0️⃣ Mini Example: Login Logic
+
+```python
+username = "admin"
+password = "secret"
+
+if username == "admin" and password == "secret":
+    print("Login successful")
+else:
+    print("Login failed")
+```
+
+### Testing perspective
+
+We can create test scenarios:
+
+| Scenario | Username | Password | Expected |
+|---|---|---|---|
+| Valid login | admin | secret | PASS |
+| Invalid password | admin | wrong | FAIL |
+| Invalid username | user | secret | FAIL |
+| Both invalid | user | wrong | FAIL |
+
+This is how programming logic starts connecting with test design.
+
+---
+
+# 3️⃣1️⃣ Mini Example: Test Result
+
+```python
+expected = "PASS"
+actual = "PASS"
+
+if expected == actual:
+    print("Test Passed")
+else:
+    print("Test Failed")
+```
+
+Later, testing frameworks provide proper **assertions**:
+
+```python
+assert actual == expected
+```
+
+You will learn assertions in the pytest module.
+
+---
+
+# 3️⃣2️⃣ Common Beginner Mistakes
+
+### ❌ Mistake 1: Learning syntax without understanding logic
+
+Don't only memorize:
+
+```python
+if
+for
+while
+def
+```
+
+Understand **why** each construct exists.
+
+### ❌ Mistake 2: Copying code without understanding it
+
+Before executing code, ask:
+
+```text
+What is the input?
+What is the process?
+What is the output?
+Why is this line required?
+```
+
+### ❌ Mistake 3: Thinking testing requires zero programming
+
+Modern automation requires programming knowledge.
+
+### ❌ Mistake 4: Trying to learn everything at once
+
+You do **not** need every advanced Python feature before starting testing.
+
+Focus on:
+
+```text
+Fundamentals
+   ↓
+Testing
+   ↓
+Automation
+   ↓
+Advanced concepts when needed
+```
+
+---
+
+# 🧪 Mini Exercises
+
+## Exercise 1 — Hello Program
 
 Write a program that prints:
 
 ```text
-Hello, Software Tester!
+My name is Vishwa
+I am learning Python
+I want to become an Automation Engineer
 ```
 
-### 🟢 Exercise 2 — Addition
+---
 
-Create two numbers and print their sum.
+## Exercise 2 — Calculator
 
-### 🟢 Exercise 3 — Login Decision
+Create variables:
 
-Create username and password variables.
+```text
+price = 100
+quantity = 5
+```
+
+Calculate and print the total.
+
+Expected:
+
+```text
+500
+```
+
+---
+
+## Exercise 3 — Login
+
+Create:
+
+```text
+username
+password
+```
 
 Print:
 
@@ -1083,141 +1124,250 @@ Print:
 Login successful
 ```
 
-when both are correct.
+when both values are correct.
 
-### 🟡 Exercise 4 — Test Result
+---
 
-Given:
-
-```python
-status_code = 200
-```
-
-print `PASS` when the status code is in the successful HTTP range.
-
-### 🟡 Exercise 5 — Multiple Tests
+## Exercise 4 — Test Result
 
 Create:
 
-```python
-test_cases = ["TC001", "TC002", "TC003", "TC004"]
+```text
+expected = "PASS"
+actual = "PASS"
 ```
 
-Loop through them and print each test case.
+Print whether the test passed or failed.
 
-### 🔴 Challenge
+---
 
-Build a small program that accepts:
+## Exercise 5 — Multiple Test Data
 
-```text
-Test Case ID
-Expected Status
-Actual Status
-```
+Create a list of test names and use a loop to print each one.
 
-and produces:
+Expected idea:
 
 ```text
-TC001 → PASS
-```
-
-or
-
-```text
-TC001 → FAIL
+Login Test
+Search Test
+Cart Test
+Checkout Test
 ```
 
 ---
 
-# 3️⃣0️⃣ Interview Questions
+# 🎯 Beginner Challenge
+
+Build a tiny **Test Result Processor**.
+
+Input:
+
+```text
+Test Name
+Expected Result
+Actual Result
+```
+
+Process:
+
+```text
+Compare expected and actual
+```
+
+Output:
+
+```text
+PASS / FAIL
+```
+
+Example:
+
+```text
+Test Name: Login Test
+Expected: PASS
+Actual: PASS
+
+Result: PASS
+```
+
+---
+
+# 💼 Real-World Testing Connection
+
+A real automation framework eventually looks conceptually like:
+
+```text
+Test Data
+    ↓
+Test Case
+    ↓
+Automation Code
+    ↓
+Application / API / AI System
+    ↓
+Assertion / Evaluation
+    ↓
+PASS / FAIL
+    ↓
+Report
+    ↓
+CI/CD Quality Gate
+```
+
+Programming is the foundation underneath this entire workflow.
+
+---
+
+# 🎤 Interview Questions
 
 ### Beginner
 
-**Q1. What is a program?**
+1. What is a program?
+2. What is programming?
+3. What is a programming language?
+4. What is source code?
+5. What is syntax?
+6. What is programming logic?
+7. What is an algorithm?
+8. What is a flowchart?
+9. What is a variable?
+10. What is data?
+11. What is a bug?
+12. What is debugging?
+13. What is a function?
+14. What is a loop?
+15. What is a condition?
 
-A set of instructions that a computer executes to perform a task.
+### Testing-oriented
 
-**Q2. What is programming?**
-
-The process of designing, writing, testing, debugging and maintaining computer programs.
-
-**Q3. What is an algorithm?**
-
-A step-by-step procedure for solving a problem.
-
-**Q4. What is source code?**
-
-Human-readable code written using a programming language.
-
-**Q5. What is syntax?**
-
-The rules that define how valid code must be written.
-
-**Q6. What is debugging?**
-
-Finding and fixing defects in a program.
-
-**Q7. What is automation?**
-
-Using software to perform tasks automatically or with reduced manual effort.
-
-**Q8. Why does a tester need programming?**
-
-Programming enables testers to create reusable automated checks, test data, API tests, UI tests, utilities and quality gates.
+16. Why does an automation tester need programming?
+17. How are variables used in test automation?
+18. Why are loops useful in automation?
+19. Why are functions useful in test frameworks?
+20. How does programming help automate repetitive tests?
+21. What is the relationship between programming and assertions?
+22. How can programming be used to validate API responses?
+23. How can programming help test AI responses?
 
 ---
 
-# 🏆 Final Takeaway
-
-If you remember only one thing from this module, remember this:
+# 🧠 Remember This
 
 ```text
-             PROBLEM
-                ↓
-             ANALYZE
-                ↓
-             ALGORITHM
-                ↓
-              LOGIC
-                ↓
-             PROGRAM
-                ↓
-              RUN
-                ↓
-              TEST
-                ↓
-             DEBUG
-                ↓
-            AUTOMATE
-                ↓
-        MEASURE QUALITY
+PROGRAM
+= Instructions
+
+PROGRAMMING
+= Creating those instructions
+
+PROGRAMMING LANGUAGE
+= Language used to write those instructions
+
+LOGIC
+= Reasoning behind the behavior
+
+ALGORITHM
+= Step-by-step solution
+
+SOURCE CODE
+= Human-readable implementation
+
+BUG
+= Defect / unexpected behavior
+
+DEBUGGING
+= Finding and fixing the cause
 ```
 
-### 🚀 Your next step
+---
 
-Now that you understand **what programming is**, move to:
+# 🚀 Your Learning Journey
 
-> 🐍 **01 — Python Introduction**
+```text
+                 PROGRAMMING
+                      │
+                      ▼
+                    PYTHON
+                      │
+                      ▼
+              TESTING FUNDAMENTALS
+                      │
+                      ▼
+                    PYTEST
+                      │
+             ┌────────┴────────┐
+             ▼                 ▼
+        API TESTING       PLAYWRIGHT
+             │                 │
+             └────────┬────────┘
+                      ▼
+             AUTOMATION FRAMEWORK
+                      │
+                      ▼
+             AI APPLICATION TESTING
+                      │
+                      ▼
+                LLM TESTING
+                      │
+                      ▼
+                AI EVALUATION
+                      │
+                      ▼
+          AI QUALITY ENGINEERING
+                      │
+                      ▼
+              CI/CD QUALITY GATES
+```
 
-There we will learn what Python is, why it is popular, where it is used, why it is especially useful for testing and AI, and how Python fits into your automation journey.
+> ⭐ **You don't learn programming just to write code. You learn programming so you can solve problems, automate work, validate software, and eventually engineer quality into modern AI systems.**
 
 ---
 
-## 🔗 Useful Official Resources
+# 🔗 Official Learning Resources
 
-- 🐍 [Python Official Documentation](https://docs.python.org/3/)
-- 📘 [Python Beginner's Guide](https://wiki.python.org/moin/BeginnersGuide)
-- 🧑‍💻 [Python Tutorial](https://docs.python.org/3/tutorial/)
-- 🧪 [pytest Documentation](https://docs.pytest.org/)
-- 🎭 [Playwright Python](https://playwright.dev/python/)
-- 📦 [Python Packaging User Guide](https://packaging.python.org/)
+- [Python Official Documentation](https://docs.python.org/3/)
+- [Python Beginner's Guide](https://wiki.python.org/moin/BeginnersGuide)
+- [Python Tutorial](https://docs.python.org/3/tutorial/)
+- [pytest Documentation](https://docs.pytest.org/)
+- [Playwright Documentation](https://playwright.dev/)
+- [GitHub Documentation](https://docs.github.com/)
 
 ---
 
-## 💙 Remember
+# ✅ Completion Checklist
 
-> **You don't need to become a computer scientist before becoming a tester.**
->
-> You need to understand the fundamentals, practice consistently, and connect every programming concept to a real software problem.
+- [ ] I understand what a program is
+- [ ] I understand programming
+- [ ] I understand programming languages
+- [ ] I understand source code
+- [ ] I understand syntax
+- [ ] I understand logic
+- [ ] I understand algorithms
+- [ ] I understand variables
+- [ ] I understand input → process → output
+- [ ] I understand conditions
+- [ ] I understand loops
+- [ ] I understand functions
+- [ ] I understand bugs
+- [ ] I understand debugging
+- [ ] I understand why programming is important for testing
+- [ ] I can explain how programming leads to automation
+- [ ] I can explain how programming supports AI testing
 
-**Next:** `01-python-introduction` 🐍
+---
+
+## 🏁 Next Chapter
+
+➡️ **[01 — Python Introduction](../01-python-introduction/README.md)**
+
+Your next step is to learn **Python itself** and begin writing real Python programs.
+
+---
+
+<p align="center">
+
+### 🚀 Learn → Practice → Automate → Test → Evaluate → Engineer Quality
+
+**Python → Testing → Automation → AI Testing → AI Quality Engineering**
+
+</p>

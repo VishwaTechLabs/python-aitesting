@@ -1,6 +1,6 @@
-# Python Syntax
+# Data Types
 
-![Python Syntax](https://img.shields.io/badge/Python%20Syntax-2F80ED?style=for-the-badge) ![Beginner → Practical](https://img.shields.io/badge/Beginner%20→%20Practical-27AE60?style=for-the-badge) ![Testing Focus](https://img.shields.io/badge/Testing%20Focus-F39C12?style=for-the-badge) ![AIQE Path](https://img.shields.io/badge/AIQE%20Path-8E44AD?style=for-the-badge)
+![Data Types](https://img.shields.io/badge/Data%20Types-2F80ED?style=for-the-badge) ![Beginner → Practical](https://img.shields.io/badge/Beginner%20→%20Practical-27AE60?style=for-the-badge) ![Testing Focus](https://img.shields.io/badge/Testing%20Focus-F39C12?style=for-the-badge) ![AIQE Path](https://img.shields.io/badge/AIQE%20Path-8E44AD?style=for-the-badge)
 
 > 📚 **Complete chapter README** — theory + examples + explanations + exercises + interview preparation.
 
@@ -8,7 +8,7 @@
 
 ## 📌 Overview
 
-**Indentation, statements, comments, expressions, blocks, naming, literals and readable Python.**
+**int, float, complex, bool, str, None, list, tuple, range, set, frozenset, dict, bytes, bytearray, memoryview.**
 
 > ⭐ **Learning philosophy:** Understand → Practice → Automate → Validate → Measure Quality.
 
@@ -34,9 +34,9 @@ By the end of this chapter, you should be able to:
 
 ## 🧠 1. Core Concept
 
-### What is Python Syntax?
+### What is Data Types?
 
-Indentation, statements, comments, expressions, blocks, naming, literals and readable Python.
+int, float, complex, bool, str, None, list, tuple, range, set, frozenset, dict, bytes, bytearray, memoryview.
 
 The most useful mental model is:
 
@@ -67,10 +67,9 @@ Do not memorize isolated syntax. Ask:
 ## 💻 2. Practical Python Example
 
 ```python
-def login(username, password):
-    if username == "admin" and password == "secret":
-        return True
-    return False
+values = [10, 3.14, True, "PASS", None]
+for value in values:
+    print(type(value).__name__)
 ```
 
 ### 🔍 Code Walkthrough
@@ -309,7 +308,7 @@ Finally explain how the same idea could be automated.
 
 ### Beginner
 
-1. What is Python Syntax?
+1. What is Data Types?
 2. Why is it needed?
 3. What problem does it solve?
 4. What are its common use cases?
@@ -354,7 +353,7 @@ Finally explain how the same idea could be automated.
 ## 🧭 11. Learning Path
 
 ```text
-Python Syntax
+Data Types
    ↓
 Python Fundamentals
    ↓
